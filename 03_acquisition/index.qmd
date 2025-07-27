@@ -142,12 +142,12 @@ These metadata elements are all important information to retain alongside our da
 
 ```{r API_print}
 # View API URL
-metadata[5, 2]
+metadata[5, 2, drop = TRUE]
 ```
 
 ```{r API_call, eval = FALSE}
 # Use API call (this is not enacted here)
-new_data <- read_csv(metadata[5, 2])
+new_data <- read_csv(metadata[5, 2, drop = TRUE])
 ```
 
 While the metadata is important to keep in the raw file, for the purposes of analysis, we want to be able to just read in the data beneath it. We can do this using the `skip` parameter in `read_csv`, which tells R to ignore a given number of rows at the top of the file.
