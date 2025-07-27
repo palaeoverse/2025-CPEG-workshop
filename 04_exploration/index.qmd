@@ -143,7 +143,7 @@ Something weird has happened here: we can see that once the countries have been 
 
 Now it's your turn! Explore the data yourself:
 
-What is the geographic scale of our data? (hint: geoscale column)
+What is the geographic scale of our data? (hint: geogscale column)
 
 ```{r}
 
