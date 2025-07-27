@@ -110,7 +110,7 @@ URL <- paste0("https://paleobiodb.org/data1.2/occs/list.csv?datainfo&rowcount&ba
 ...and then use the download.file function to download and save the file:
 
 ```{r obtain_data, message = FALSE}
-download.file(URL, destfile = "cenozoic_crocs_raw.csv")
+download.file(URL, destfile = "cenozoic_crocs_raw.csv", mode = "wb")
 ```
 
 And now we have obtained our dataset.
