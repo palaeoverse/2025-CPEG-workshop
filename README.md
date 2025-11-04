@@ -37,31 +37,31 @@ We strongly recommend that you archive your workshop materials. Archiving should
 ## Folder structure and content
 
 ```bash
-├── 2025-CPEG-workshop
-│   ├── 01_introduction -- materials for the introduction of the workshop
-│   │   ├── index.qmd -- landing page
-│   │   └── workshop_intro_cpeg.qmd -- slides
-│   ├── 02_workflow -- materials for the reproducible workflow module
-│   │   ├── index.qmd -- landing page
-│   │   └── rproj_github.qmd -- slides
-│   ├── 03_acquisition -- materials for the data acquisition workflow module
-│   │   ├── index.qmd -- landing page
-│   │   ├── cenozoic_crocs_raw.csv -- data for module
-│   │   └── CPEGDataAcquisition.pdf -- slides
-│   ├── 04_exploration -- materials for the data exploration and cleaning module
-│   │   ├── index.qmd -- landing page
-│   │   └── cenozoic_crocs.csv -- data for module
-│   ├── 05_harmonization -- materials for the data harmonization module
-│   │   ├── index.qmd -- landing page
-│   │   └── ... -- various data files and figures for the module
-│   ├── 06_archiving -- materials for the data archiving module
-│   │   ├── index.qmd -- landing page
-│   │   └── CPEGArchivingPublishing.pdf -- slides
-│   ├── 07_wrap-up -- materials for the workshop wrap-up
-│   │   └── index.qmd -- landing page
-│   └── images -- use this folder for storing images needed for one or more pages
-│       ├── logo.png -- Palaeoverse logo
-│       └── ... -- various other images
+2025-CPEG-workshop
+├── 01_introduction -- materials for the introduction of the workshop
+│   ├── index.qmd -- landing page
+│   └── workshop_intro_cpeg.qmd -- slides
+├── 02_workflow -- materials for the reproducible workflow module
+│   ├── index.qmd -- landing page
+│   └── rproj_github.qmd -- slides
+├── 03_acquisition -- materials for the data acquisition workflow module
+│   ├── index.qmd -- landing page
+│   ├── cenozoic_crocs_raw.csv -- data for module
+│   └── CPEGDataAcquisition.pdf -- slides
+├── 04_exploration -- materials for the data exploration and cleaning module
+│   ├── index.qmd -- landing page
+│   └── cenozoic_crocs.csv -- data for module
+├── 05_harmonization -- materials for the data harmonization module
+│   ├── index.qmd -- landing page
+│   └── ... -- various data files and figures for the module
+├── 06_archiving -- materials for the data archiving module
+│   ├── index.qmd -- landing page
+│   └── CPEGArchivingPublishing.pdf -- slides
+├── 07_wrap-up -- materials for the workshop wrap-up
+│   └── index.qmd -- landing page
+├── images -- use this folder for storing images needed for one or more pages
+│   ├── logo.png -- Palaeoverse logo
+│   └── ... -- various other images
 ├── LICENSE
 ├── README.md
 ├── index.qmd -- workshop home page
