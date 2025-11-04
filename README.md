@@ -1,20 +1,16 @@
-# Palaeoverse Workshop Template
+# Building Open Data Science Skills in Paleobiology and Ecology
 
-## Purpose
+These are the materials for a workshop run by Palaeoverse at the 4th Crossing the Paleontological-Ecological Gap (CPEG) Meeting & 3rd Conservation Paleobiology Symposium in Zurich in July, 2025.
 
-The aim of this template is to provide a set structure for the organisation of content and materials for workshops run by [Palaeoverse](https://palaeoverse.org). It is established for the internal Palaeoverse team and is therefore specific to our needs. However, if useful, anyone is free to download or reuse the template for their own purposes.
+## Editing Instructions
 
-## Instructions
+Follow this helpful checklist to contribute to these workshop materials.
 
-So, we're doing another workshop are we!? Follow this helpful checklist to get started with this template.
-
-1. On the main page of the repository, click 'Use this template' (top right) and select 'Create a new repository'.
-2. Enter a suitable repository name for the workshop, including the year and place/event (e.g. 2023-UCL-workshop, 2024-NAPC-workshop).
-3. You are now ready to start creating your workshop content and materials. Start by updating the `README.md` file in the repository. You may wish to include information about the workshop (e.g. who it is run by, where and when, funding support, etc) and archiving information ([see below](#archiving)).
-4. At this point you should edit the `index.qmd` in the top-level of the directory. There is placeholder text in the file, so just update accordingly! Note that whatever `title` you list in the header will be used for the navigation menu in the [workshop website](https://workshop.palaeoverse.org). The `order` attribute should be updated to place this workshop in the desired location in the navigation menu. The oldest workshop (UCL 2023) has `order: 99`, the next oldest workshop (NAPC 2024) has `order: 98`, etc. **You should assign your workshop with the highest `order` value less than 100 that has yet to be used (you can check the files in the [workshop website repository](https://github.com/palaeoverse/workshop) if counting is too hard).**
-5. You can now prepare your course materials. Each unit of the workshop should have a designated folder (with an informative name). Placeholder folders have been included (e.g. `01_UNIT_NAME`), which you can rename, delete, or add to as you please. Within each unit folder, you should have an `index.qmd` file. This is the landing file you should populate for the given unit. As with the root `index.qmd` file, the `title` in this file will be used in the navigation menu.
-6. **In order to ensure that the units are listed in the desired order in the navigation menu, the `order` attribute in the YAML of each `index.qmd` file should be updated to reflect the desired order of the units (e.g. the `index.qmd` file in the first unit should have `order: 1`, the `index.qmd` file in the second unit should have `order: 2`, etc).**
-7. (optional) Within each unit folder, you can also have other .qmd files if you need to organize your content across multiple pages. You should again use the `order` attribute to determine the order of these pages in the navigation menu. You are welcome to also include other materials in these unit folders, including, but not limited to, images, scripts, and data files. You can structure your materials as you please, but in general, we recommend being organised - this means having a dedicated folder structure such as `materials/data`. **When linking between pages, linking to other materials, or including images, make sure to use relative paths instead of absolute paths.** You may also use full URLs if linking to external materials or including external images.
+1. The `README.md` file in the repository should include information about the workshop (e.g. who it is run by, where and when, funding support, etc) and archiving information ([see below](#archiving)).
+2. The `index.qmd` file in the top-level of the directory represents the landing page for the workshop materials. There is placeholder text in the file, so just update accordingly! Note that whatever `title` you list in the header will be used for the navigation menu in the [workshop website](https://workshop.palaeoverse.org). The `order` attribute should be updated to place this workshop in the desired location in the navigation menu. The oldest workshop (UCL 2023) has `order: 99`, the next oldest workshop (NAPC 2024) has `order: 98`, etc. **You should assign your workshop with the highest `order` value less than 100 that has yet to be used (you can check the files in the [workshop website repository](https://github.com/palaeoverse/workshop) if counting is too hard).**
+3. Each unit of the workshop should have a designated folder (with an informative name). Within each unit folder, you should have an `index.qmd` file. This is the landing file you should populate for the given unit. As with the root `index.qmd` file, the `title` in this file will be used in the navigation menu.
+4. **In order to ensure that the units are listed in the desired order in the navigation menu, the `order` attribute in the YAML of each `index.qmd` file should be updated to reflect the desired order of the units (e.g. the `index.qmd` file in the first unit should have `order: 1`, the `index.qmd` file in the second unit should have `order: 2`, etc).**
+5. (optional) Within each unit folder, you can also have other .qmd files if you need to organize your content across multiple pages. You should again use the `order` attribute to determine the order of these pages in the navigation menu. You are welcome to also include other materials in these unit folders, including, but not limited to, images, scripts, and data files. You can structure your materials as you please, but in general, we recommend being organised - this means having a dedicated folder structure such as `materials/data`. **When linking between pages, linking to other materials, or including images, make sure to use relative paths instead of absolute paths.** You may also use full URLs if linking to external materials or including external images.
 
 ## Deploying to the Palaeoverse Workshop Website
 
@@ -41,26 +37,38 @@ We strongly recommend that you archive your workshop materials. Archiving should
 ## Folder structure and content
 
 ```bash
-├── workshop-template
-│   ├── README.md
-│   ├── index.qmd
-│   ├── 01_UNIT_NAME
-│   │   ├── index.qmd
-│   ├── 02_UNIT_NAME
-│   │   ├── index.qmd
-│   ├── 03_UNIT_NAME
-│   │   ├── index.qmd
-│   ├── 04_UNIT_NAME
-│   │   ├── index.qmd
-│   ├── 05_UNIT_NAME
-│   │   ├── index.qmd
-│   ├── images
-│   │   ├── logo.png
+├── 2025-CPEG-workshop
+│   ├── 01_introduction -- materials for the introduction of the workshop
+│   │   ├── index.qmd -- landing page
+│   │   └── workshop_intro_cpeg.qmd -- slides
+│   ├── 02_workflow -- materials for the reproducible workflow module
+│   │   ├── index.qmd -- landing page
+│   │   └── rproj_github.qmd -- slides
+│   ├── 03_acquisition -- materials for the data acquisition workflow module
+│   │   ├── index.qmd -- landing page
+│   │   ├── cenozoic_crocs_raw.csv -- data for module
+│   │   └── CPEGDataAcquisition.pdf -- slides
+│   ├── 04_exploration -- materials for the data exploration and cleaning module
+│   │   ├── index.qmd -- landing page
+│   │   └── cenozoic_crocs.csv -- data for module
+│   ├── 05_harmonization -- materials for the data harmonization module
+│   │   ├── index.qmd -- landing page
+│   │   └── ... -- various data files and figures for the module
+│   ├── 06_archiving -- materials for the data archiving module
+│   │   ├── index.qmd -- landing page
+│   │   └── CPEGArchivingPublishing.pdf -- slides
+│   ├── 07_wrap-up -- materials for the workshop wrap-up
+│   │   └── index.qmd -- landing page
+│   └── images -- use this folder for storing images needed for one or more pages
+│       ├── logo.png -- Palaeoverse logo
+│       └── ... -- various other images
 ├── LICENSE
-├── workshop.Rproj
+├── README.md
+├── index.qmd -- workshop home page
+├── workshop.Rproj -- Rproject file for RStudio
 ├── .github
-│   │   ├── workflows
-│   │   │   ├── quarto-publish.yml
+│   └── workflows
+│       └── copy.yml -- copies files to the main workshop repository
 └── .gitignore
 ```
 
