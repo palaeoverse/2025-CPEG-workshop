@@ -38,6 +38,9 @@ We strongly recommend that you archive your workshop materials. Archiving should
 
 ```bash
 2025-CPEG-workshop
+├── .github
+│   └── workflows
+│       └── copy.yml -- copies files to the main workshop repository
 ├── 01_introduction -- materials for the introduction of the workshop
 │   ├── index.qmd -- landing page
 │   └── workshop_intro_cpeg.qmd -- slides
@@ -62,14 +65,11 @@ We strongly recommend that you archive your workshop materials. Archiving should
 ├── images -- use this folder for storing images needed for one or more pages
 │   ├── logo.png -- Palaeoverse logo
 │   └── ... -- various other images
+├── .gitignore
 ├── LICENSE
 ├── README.md
 ├── index.qmd -- workshop home page
-├── workshop.Rproj -- Rproject file for RStudio
-├── .github
-│   └── workflows
-│       └── copy.yml -- copies files to the main workshop repository
-└── .gitignore
+└── workshop.Rproj -- Rproject file for RStudio
 ```
 
 ![](images/logo.png)
