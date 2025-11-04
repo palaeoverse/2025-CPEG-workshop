@@ -329,11 +329,11 @@ Now let's make a new R project based on this cloned repository...
 Now let's make some changes to the repository:
 
 1. Open the `README.md` file in RStudio and add some text to it. Perhaps your name or today's date. Make sure to save the file.
-2. You'll now see that the `README.md` file has been modified in the Git panel in RStudio.
-3. Click the checkbox next to the `README.md` file in the Git panel to stage the changes.
-4. In the "Commit message" box, write a brief description of the changes you made (e.g., "Added my name to README").
-5. Click the "Commit" button to commit the changes to your local repository.
-6. Click the "Push" button in the Git panel to upload your changes to GitHub.
+2. Now open GitHub Desktop again. You'll now see that the `README.md` file has been modified. There should also be a new .Rproj file in the list of changed files.
+3. Make sure the checkboxes next to both of these files are checked.
+4. In the small "Commit message" box below, write a brief message about the changes you made (it probably already says something like "Update README.md"). The larger box below this can be used if you need to further describe your changes.
+5. Click the "Commit" button to commit the changes to your **local repository**.
+6. Click the "Push origin" button to upload your changes to GitHub.
 
 ::: notes
 
